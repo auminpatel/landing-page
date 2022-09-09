@@ -6,16 +6,11 @@
 // creating SSL certs -- https://medium.com/@nitinpatel_20236/how-to-create-an-https-server-on-localhost-using-express-366435d61f28
 
 // Define the basic imports and constants.
-const fs = require('fs');
-const http = require('https');
+// const fs = require('fs');
+const http = require('http');
 const express = require('express');
 const app = express();
-const port = 5002;
-
-// Get the keys and certs for HTTPS.
-const key = fs.readFileSync('./ssl/www-key.pem');
-const cert = fs.readFileSync('./ssl/www-cert.pem');
-
+const port = 5001;
 
 // Setup the outside app with the www folder as static content.
 app.use(express.static('src', {setHeaders: function (res, path, stat) {
