@@ -1,23 +1,19 @@
 {
   "name": "landing-page",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Music Album",
+  "private": true,
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/auminpatel/landing-page.git"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "aumin",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/auminpatel/landing-page/issues"
-  },
-  "homepage": "https://github.com/auminpatel/landing-page#readme",
   "dependencies": {
+    "express": "4.17.3",
+    "fs": "0.0.1-security",
+    "https": "1.0.0",
+    "nodemon": "^2.0.19",
     "zoid": "^9.0.86"
   }
 }
