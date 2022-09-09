@@ -24,7 +24,7 @@ app.use(express.static('src', {setHeaders: function (res, path, stat) {
 
 
 // Create the outside app with the first key / cert and run it.
-const server = http.createServer({ key: key, cert: cert }, app);
+const server = http.createServer(app);
 server.listen(port, () => {
   console.log(`Open browser to https://localhost:${port}/ to begin.`);
 });
