@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "buildCommand": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,10 @@
   },
   "homepage": "https://github.com/auminpatel/landing-page#readme",
   "dependencies": {
+    "express": "4.17.3",
+    "fs": "0.0.1-security",
+    "https": "1.0.0",
+    "nodemon": "^2.0.19",
     "zoid": "^9.0.86"
   }
 }
